@@ -1,0 +1,12 @@
+site/
+.DS_Store
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
