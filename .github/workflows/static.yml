@@ -37,7 +37,7 @@ jobs:
         run: |
           pip install mkdocs  # 安装 MkDocs 核心
           # 如果使用了主题或插件，可以在这里一起安装，例如：
-          # pip install mkdocs-material
+          pip install mkdocs-material
 
       - name: Build site
         run: mkdocs build  # 生成 site 目录
