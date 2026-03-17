@@ -1,0 +1,88 @@
+site_name: My Docs
+site_description: 我的文档网站
+site_author: Your Name
+site_url: https://example.com
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 友情链接: friends.md
+  - Web 开发:
+      - HTML:
+          - 网页基础信息: web/html/1-网页基础信息.md
+          - VSCode插件和快捷键: web/html/2-vscode插件和快捷键.md
+          - 头部标签: web/html/3-头部标签.md
+          - 块级元素和内联元素: web/html/4-块级元素和内联元素.md
+          - 常用标签: web/html/5-常用标签.md
+          - 路径: web/html/6-路径.md
+          - 注释和特殊字符: web/html/7-注释和特殊字符.md
+          - 音视频标签: web/html/8-音视频标签.md
+          - 布局标签: web/html/9-布局标签.md
+          - 表格标签: web/html/10-表格标签.md
+          - 表单标签: web/html/11-表单标签.md
+      - CSS:
+          - CSS的3种位置: web/css/1-css的3种位置.md
+          - CSS选择器: web/css/2-css选择器.md
+          - CSS样式: web/css/3-css样式.md
+          - CSS的三大特性: web/css/4-css的三大特性.md
+  - Git:
+      - Git命令: git/git命令.md
+      - Git命令详细: git/git命令详细.md
+  - MkDocs:
+      - 安装: mkdocs/1、安装.md
+      - 配置: mkdocs/2、配置.md
+      - 自定义CSS: mkdocs/3、自定义css.md
+      - 使用: mkdocs/4、使用.md
+
