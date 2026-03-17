@@ -58,9 +58,9 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 关于: about.md
-  - 友情链接: friends.md
   - Web 开发:
       - HTML:
+          - 介绍: web/html/README.md
           - 网页基础信息: web/html/1-网页基础信息.md
           - VSCode插件和快捷键: web/html/2-vscode插件和快捷键.md
           - 头部标签: web/html/3-头部标签.md
@@ -73,6 +73,7 @@ nav:
           - 表格标签: web/html/10-表格标签.md
           - 表单标签: web/html/11-表单标签.md
       - CSS:
+          - 介绍: web/css/README.md
           - CSS的3种位置: web/css/1-css的3种位置.md
           - CSS选择器: web/css/2-css选择器.md
           - CSS样式: web/css/3-css样式.md
